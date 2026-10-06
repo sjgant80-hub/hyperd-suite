@@ -1,0 +1,23 @@
+{
+  "build": "hyperd-suite",
+  "measured": {
+    "count": 4,
+    "allHold": true
+  },
+  "claims": [
+    {
+      "id": "P1",
+      "text": "All four hyper-geometry organ claims re-derive and HOLD from their own kernels",
+      "check": "allHold === true",
+      "pass": true
+    },
+    {
+      "id": "P2",
+      "text": "The suite covers exactly four organs",
+      "check": "count === 4",
+      "pass": true
+    }
+  ],
+  "allPass": true,
+  "note": "Re-derived from the vendored organ kernels via suite.mjs; ci-verify.mjs re-checks on the runner."
+}
