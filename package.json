@@ -1,0 +1,8 @@
+{
+  "name": "hyperd-suite",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "The hyper-geometry capstone: re-derive all four organs' sealed claims from their own kernels in one place. Kernel-backed, witnessed, sealed.",
+  "scripts": { "test": "node --test" }
+}

@@ -1,0 +1,18 @@
+name: proof-of-play
+on:
+  push: { branches: [main, master] }
+  pull_request:
+  workflow_dispatch:
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Unit tests
+        run: node --test
+      - name: Mutation gate — the suite kernel must be CLEAN
+        run: node tools/witness.mjs mutate suite.mjs --test node --test
+      - name: Re-derive the suite verdict and check against predictions.json
+        run: node ci-verify.mjs

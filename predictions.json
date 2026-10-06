@@ -1,0 +1,10 @@
+{
+  "build": "hyperd-suite",
+  "what": "The hyper-geometry capstone: re-derive each organ's headline claim from its OWN vendored kernel and report whether the whole upgrade still holds. Run it all as one system.",
+  "sealed_before_measurement": true,
+  "claims": [
+    { "id": "P1", "text": "All four hyper-geometry organ claims re-derive and HOLD from their own kernels", "check": "allHold === true" },
+    { "id": "P2", "text": "The suite covers exactly four organs", "check": "count === 4" }
+  ],
+  "expected": { "count": 4, "allHold": true }
+}

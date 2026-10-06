@@ -1,0 +1,6 @@
+# hyperd-suite
+The hyper-geometry capstone: one page that re-derives all four hyper-geometry organs' sealed claims from
+their OWN vendored kernels and reports whether the whole upgrade holds. "Run it all as one system."
+- Live: https://sjgant80-hub.github.io/hyperd-suite/
+- Organs: hypercube-mesh (≤4 hops), fold-coords (one metric), pattern-forge find + improve
+- Kernel: suite.mjs (re-derives each claim); kernels vendored from each organ's repo (see VENDOR.md)
